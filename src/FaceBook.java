@@ -19,7 +19,7 @@ public class FaceBook
 		// Creating new Account
 		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Harsha");
 		driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("MMP");
-		driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("8888888888");
+		driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("aaaaa@gmail.com");
 		driver.findElement(By.xpath("//input[@name='reg_passwd__']")).sendKeys("Password@123");
 		Select s = new Select(driver.findElement(By.id("day")));
 			s.selectByValue("6");
