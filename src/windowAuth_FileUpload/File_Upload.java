@@ -15,7 +15,9 @@ public class File_Upload {
 		driver.get("https://www.ilovepdf.com/pdf_to_jpg");
 		driver.findElement(By.cssSelector("[class*='uploader__btn']")).click();
 		Thread.sleep(5000);
-		Runtime.getRuntime().exec("C:\\Work\\AutoIT\\File_Upload.exe");
+		// Get the exe file using AutoIT software...
+		
+		Runtime.getRuntime().exec("C:\\Work\\AutoIT\\File_Upload.exe"); 
 
 	}
 
