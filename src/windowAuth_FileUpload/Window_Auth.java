@@ -11,6 +11,7 @@ public class Window_Auth {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Work\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		//URL based authentication 
 		driver.get("http://admin:admin@the-internet.herokuapp.com/");
 		driver.findElement(By.linkText("Basic Auth")).click();
 

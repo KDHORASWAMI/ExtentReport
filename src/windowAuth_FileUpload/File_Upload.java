@@ -1,6 +1,7 @@
 package windowAuth_FileUpload;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +15,7 @@ public class File_Upload {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.ilovepdf.com/pdf_to_jpg");
 		driver.findElement(By.cssSelector("[class*='uploader__btn']")).click();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// Get the exe file using AutoIT software...
 		
 		Runtime.getRuntime().exec("C:\\Work\\AutoIT\\File_Upload.exe"); 
